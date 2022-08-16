@@ -1,13 +1,21 @@
 package strategy;
 
 public abstract class Duck {
-    public String quack() {
-        return "duck can quack";
-    };
+    QuackBehavior quackBehavior;
+    FlyBehavior flyBehavior;
 
-    public String swim() {
-        return "duck can swim";
-    };
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
+    public void performFly() {
+        flyBehavior.fly();
+    }
+
+    public Duck(QuackBehavior quackBehavior, FlyBehavior flyBehavior) {
+        this.quackBehavior = quackBehavior;
+        this.flyBehavior = flyBehavior;
+    }
 
     /**
      * The display() method is abstaact
@@ -17,5 +25,11 @@ public abstract class Duck {
      */
     abstract void display();
 
-    abstract void fly();
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
+
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
 }

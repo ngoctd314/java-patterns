@@ -1,14 +1,14 @@
 package strategy;
 
 public class RedheadDuck extends Duck {
+    public RedheadDuck(QuackBehavior quackBehavior, FlyBehavior flyBehavior) {
+        super(quackBehavior, flyBehavior);
+    }
 
     @Override
     void display() {
-        System.out.println("redhead Duck");
+        this.performFly();
+        this.performQuack();
     }
 
-    @Override
-    void fly() {
-        System.out.println("can't fly");
-    }
 }
