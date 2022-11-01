@@ -1,18 +1,9 @@
-## Getting Started
+# GOF
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Design Principle 
 
-## Folder Structure
+**Observer Pattern**
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Strive for loosely coupled designs between objects that interact.
+Loosely coupled designs allow us to build flexible OO systems that can handle change between they minimize
+the interdependency between objects.
